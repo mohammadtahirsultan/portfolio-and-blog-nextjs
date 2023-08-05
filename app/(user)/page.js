@@ -1,8 +1,8 @@
-import Image from 'next/image'
+import Image from "next/image"
 import TutorialCard from "../components/TutorialCard"
-import BlogCard from '../components/BlogCard'
+import BlogCard from "../components/BlogCard"
 import { fetchHomeBlogData, fetchProjectHomeData } from "../sanity/client"
-import { generateStaticParams } from "./staticPagesBuild"
+// import { generateStaticParams } from "./staticPagesBuild"
 
 
 export const revalidate = 30
