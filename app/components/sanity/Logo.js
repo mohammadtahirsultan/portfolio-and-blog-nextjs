@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import brandLogo from '@/public/logo.png'
 
 function Logo(props) {
   const { renderDefault, title } = props
@@ -9,7 +8,7 @@ function Logo(props) {
         className="rounded-full object-cover"
         width={55}
         height={55}
-        src={brandLogo}
+        src={"/logo.png"}
         alt="brand logo"
       ></Image>
       {renderDefault && <>{renderDefault(props)}</>}

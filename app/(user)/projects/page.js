@@ -1,5 +1,5 @@
-import { fetchProjectData } from '@/app/sanity/client'
-import TutorialCard from "@/app/components/TutorialCard"
+import { fetchProjectData } from '../../sanity/client'
+import TutorialCard from "../../components/TutorialCard";
 import { groq } from 'next-sanity'
 import client from '../../sanity/client'
 
