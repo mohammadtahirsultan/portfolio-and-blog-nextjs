@@ -1,15 +1,15 @@
 import Image from 'next/image'
-import TutorialCard from '../components/TutorialCard'
+import TutorialCard from "../components/TutorialCard"
 import BlogCard from '../components/BlogCard'
-import { fetchHomeBlogData, fetchProjectHomeData } from '../sanity/client'
-import { generateStaticParams } from './staticPagesBuild'
+import { fetchHomeBlogData, fetchProjectHomeData } from "../sanity/client"
+import { generateStaticParams } from "./staticPagesBuild"
 
 
 export const revalidate = 30
  
 export default async function Home() {
 
-  await generateStaticParams()
+  // await generateStaticParams()
 
   const res = await fetchHomeBlogData()
   const project = await fetchProjectHomeData()
