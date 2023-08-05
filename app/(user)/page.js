@@ -1,26 +1,15 @@
 import Image from 'next/image'
 import TutorialCard from '../components/TutorialCard'
 import BlogCard from '../components/BlogCard'
-import client, { fetchHomeBlogData, fetchProjectHomeData } from '../sanity/client'
-import { groq } from 'next-sanity'
+import { fetchHomeBlogData, fetchProjectHomeData } from '../sanity/client'
+import { generateStaticParams } from './staticPagesBuild'
+
 
 export const revalidate = 30
-
-export async function generateStaticParams() {
-  const query = groq`
-    *[_type == 'post'] {
-      slug
-    }
-  `
-  const slugs = await client.fetch(query)
-  const slugRoutes = slugs.map(slug => slug.slug.current)
-
-  return slugRoutes.map(slug => ({
-    slug,
-  }))
-}
-
+ 
 export default async function Home() {
+
+  await generateStaticParams()
 
   const res = await fetchHomeBlogData()
   const project = await fetchProjectHomeData()
