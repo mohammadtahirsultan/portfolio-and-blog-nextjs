@@ -1,5 +1,5 @@
 import { RichTextComponent } from '@/app/components/RichTextComponent';
-import client from '@/app/sanity/client';
+import client from '../../../sanity/client';
 import { PortableText } from '@portabletext/react'
 import { groq } from 'next-sanity'
 

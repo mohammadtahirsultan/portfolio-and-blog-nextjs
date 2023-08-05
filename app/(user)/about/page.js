@@ -1,5 +1,5 @@
 import React from "react";
-import "@/styles/custom.css";
+import "../../../styles/custom.css";
 // import LinkedInIcon from "@material-ui/icons/";
 // import InstagramIcon from "@material-ui/icons/Instagram";
 import Image from "next/image";
