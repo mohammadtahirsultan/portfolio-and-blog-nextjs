@@ -23,7 +23,7 @@ export default async function Home() {
             </h1>
             <p className="mb-8 leading-relaxed">Ghareeb Star Blog, Your Source for Programming Insights and Web Development Wonders!❤😎
               <br />
-              Explore the fusion of programming brilliance and web development artistry at Ghareeb Star Blog. Join me in unraveling the complexities of coding, discovering valuable tips, and diving into the realm of crafting captivating websites. Delve into my web development projects, where innovation knows no bounds. Let's embark on this digital adventure together</p>
+              Explore the fusion of programming brilliance and web development artistry at Ghareeb Star Blog. Join me in unraveling the complexities of coding, discovering valuable tips, and diving into the realm of crafting captivating websites. Delve into my web development projects, where innovation knows no bounds. Let&apos;s embark on this digital adventure together</p>
             <div className="flex justify-center">
               <button className="inline-flex text-white bg-black border-0 py-2 px-6 focus:outline-none hover:bg-gray-900 rounded text-lg">Projects</button>
               <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Blogs</button>
@@ -89,7 +89,7 @@ export default async function Home() {
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
                   <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h345.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h345.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
                 </svg>
-                <p className="leading-relaxed mb-6">I stumbled upon Share Programming's blog and YouTube channel while learning web development. The tutorials are crystal clear, and the instructor's teaching style makes complex topics easy to grasp. This resource is a game-changer for anyone looking to excel in programming.</p>
+                <p className="leading-relaxed mb-6">I stumbled upon Share Programming&apos;s blog and YouTube channel while learning web development. The tutorials are crystal clear, and the instructor&apos;s teaching style makes complex topics easy to grasp. This resource is a game-changer for anyone looking to excel in programming.</p>
                 <a className="inline-flex items-center">
                   <Image alt="testimonial" src="/user1.jpg" width={"500"} height={"500"} className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" />
                   <span className="flex-grow flex flex-col pl-4">
@@ -104,7 +104,7 @@ export default async function Home() {
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
                   <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h345.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h345.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
                 </svg>
-                <p className="leading-relaxed mb-6">Share Programming's blog and YouTube channel are my go-to for programming knowledge. The blog's articles are insightful, and the video tutorials are fantastic. They've elevated my skills and understanding, making me a more confident developer. Highly recommended!.</p>
+                <p className="leading-relaxed mb-6">Share Programming&apos;s blog and YouTube channel are my go-to for programming knowledge. The blog&apos;s articles are insightful, and the video tutorials are fantastic. They&apos;ve elevated my skills and understanding, making me a more confident developer. Highly recommended!.</p>
                 <a className="inline-flex items-center">
                   <Image height={"500"} width={"500"} alt="testimonial" src="/user2.jpg" className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" />
                   <span className="flex-grow flex flex-col pl-4">
