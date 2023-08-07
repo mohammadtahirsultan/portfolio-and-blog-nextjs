@@ -1,8 +1,13 @@
 import React from 'react'
 import BlogCard from '../../components/BlogCard'
+import { generateStaticParams } from '../staticPagesBuild'
 import { fetchBlogData } from '../../sanity/client'
 
+export const revalidate = 30
+
 const Blogs = async () => {
+
+  await generateStaticParams()
   const res = await fetchBlogData()
   return (
     <>

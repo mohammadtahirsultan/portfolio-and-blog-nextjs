@@ -1,7 +1,6 @@
 import { fetchProjectData } from '../../sanity/client'
 import TutorialCard from "../../components/TutorialCard";
-import { groq } from 'next-sanity'
-import client from '../../sanity/client'
+
 import { generateStaticParams } from './generateStaticPages';
 
 export const revalidate = 30
