@@ -3,6 +3,7 @@ import TutorialCard from "../components/TutorialCard"
 import BlogCard from "../components/BlogCard"
 import { fetchHomeBlogData, fetchProjectHomeData } from "../sanity/client"
 import { generateStaticParams } from "./staticPagesBuild"
+import Link from "next/link"
 
 
 export const revalidate = 30
@@ -14,10 +15,6 @@ export default async function Home() {
   const res = await fetchHomeBlogData()
   const project = await fetchProjectHomeData()
 
-  
-  // console.log(res[2].Image.asset._ref);
-
-  console.log(res.length);
 
   return (
     <>
@@ -30,8 +27,8 @@ export default async function Home() {
               <br />
               Explore the fusion of programming brilliance and web development artistry at Ghareeb Star Blog. Join me in unraveling the complexities of coding, discovering valuable tips, and diving into the realm of crafting captivating websites. Delve into my web development projects, where innovation knows no bounds. Let&apos;s embark on this digital adventure together</p>
             <div className="flex justify-center">
-              <button className="inline-flex text-white bg-black border-0 py-2 px-6 focus:outline-none hover:bg-gray-900 rounded text-lg">Projects</button>
-              <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Blogs</button>
+              <Link href={"/projects"} className="inline-flex text-white bg-black border-0 py-2 px-6 focus:outline-none hover:bg-gray-900 rounded text-lg">Projects</Link>
+              <Link href={"/blogs"} className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Blogs</Link>
             </div>
           </div>
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
