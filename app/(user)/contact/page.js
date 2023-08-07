@@ -12,8 +12,7 @@ const Contact = () => {
 
       <div className="mb-52 md:mb-20 flex justify-center items-center mailBtn">
         <p className="tracking-widest font-semibold mr-4">Contact Us on :</p>
-        <a href="https://api.whatsapp.com/send?phone=03241553013">
-          {/* <button className="tracking-widest font-semibold"> Send Message</button>/ */}
+        <a href="https://api.whatsapp.com/send?phone=+923266640988">
           <Image width={40} height={30} alt={"contact-us-on-whatsapp"} src="/whatsapp.png" />
         </a>
       </div>
