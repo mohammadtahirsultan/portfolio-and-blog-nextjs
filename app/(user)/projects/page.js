@@ -19,7 +19,7 @@ const Tutorials = async () => {
         <div className="flex flex-wrap -m-4">
 
           {
-            project && project.map((item) => <TutorialCard title={item.title} description={item.description} key={item._id} mainImage={item.Image.asset._ref} category={item.category} projectUrl={item.url} />)
+            project && project.map((item) => <TutorialCard title={item.title} description={item.description} key={item._id} mainImage={item.Image.asset?._ref} category={item.category} projectUrl={item.url} />)
           }
 
         </div>

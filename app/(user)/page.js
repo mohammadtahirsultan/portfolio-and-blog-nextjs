@@ -6,13 +6,18 @@ import { generateStaticParams } from "./staticPagesBuild"
 
 
 export const revalidate = 30
- 
+
 export default async function Home() {
 
   await generateStaticParams()
 
   const res = await fetchHomeBlogData()
   const project = await fetchProjectHomeData()
+
+  
+  // console.log(res[2].Image.asset._ref);
+
+  console.log(res.length);
 
   return (
     <>
@@ -44,11 +49,11 @@ export default async function Home() {
         </div>
         <div className="container px-5 py-16 mx-auto">
           <div className="flex flex-wrap -m-4">
-
             {
               res &&
               res.map((item) => {
-                return <BlogCard title={item.title} description={item.description} key={item._id} mainImage={item.Image.asset._ref} category={item.category} slug={item.slug.current} />;
+                return <BlogCard title={item.title} description={item.description} key={item._id} category={item.category} mainImage={item.Image.asset._ref}
+                  slug={item.slug.current} />;
               })
             }
 
