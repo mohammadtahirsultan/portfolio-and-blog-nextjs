@@ -10,7 +10,7 @@ const Tutorials = async () => {
   const project = await fetchProjectData()
   return (
     <section className="mt-8 text-gray-600 body-font max-w-full md:mx-10">
-      <h1 className='text-center md:text-3xl text-black '>Tutorials</h1>
+      <h1 className='text-center md:text-3xl text-black '>Projects</h1>
       <div className='flex justify-center items-center'>
         <hr className='py-0.5 mt-2 w-20 bg-black' />
       </div>
