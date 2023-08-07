@@ -10,6 +10,8 @@ export const metadata = {
   description: 'This is a Blog Website build with Next JS and Sanity.io',
 }
 
+// hello
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
