@@ -26,7 +26,6 @@ async function fetchCategoryData(categoryRef) {
   }
   
 
-
   export async function fetchProjectData() {
     const res = await client.fetch('*[_type == "project"]');
     const dataPromises = res.map(async (item) => {

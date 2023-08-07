@@ -48,7 +48,7 @@ export default async function Home() {
             {
               res &&
               res.map((item) => {
-                return <BlogCard title={item.title} description={item.description} key={item._id} mainImage={item.Image?.asset._ref} category={item.category} slug={item.slug.current} />;
+                return <BlogCard title={item.title} description={item.description} key={item._id} mainImage={item.Image.asset._ref} category={item.category} slug={item.slug.current} />;
               })
             }
 
